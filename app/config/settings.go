@@ -5,7 +5,7 @@ type Browser string
 var (
 	AppVersion string = "3.4.0"
 	AppIP      string = "172.20.103.227"
-	AppPort    string = "3000"
+	AppPort    string = "18085"
 	AppDebug   bool   = false
 
 	PathQrCode    string = "statics/qrcode"
