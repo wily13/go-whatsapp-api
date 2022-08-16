@@ -4,7 +4,7 @@ import (
 	"testing"
 
 	"github.com/stretchr/testify/assert"
-	"github.com/wily13/go-whatsapp-api/src/structs"
+	"github.com/wily13/go-whatsapp-api/structs"
 )
 
 func TestValidateSendMessage(t *testing.T) {

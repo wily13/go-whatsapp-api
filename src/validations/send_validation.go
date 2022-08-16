@@ -5,9 +5,9 @@ import (
 
 	"github.com/dustin/go-humanize"
 	validation "github.com/go-ozzo/ozzo-validation/v4"
-	"github.com/wily13/go-whatsapp-api/src/config"
-	"github.com/wily13/go-whatsapp-api/src/structs"
-	"github.com/wily13/go-whatsapp-api/src/utils"
+	"github.com/wily13/go-whatsapp-api/config"
+	"github.com/wily13/go-whatsapp-api/structs"
+	"github.com/wily13/go-whatsapp-api/utils"
 )
 
 func ValidateSendMessage(request structs.SendMessageRequest) {

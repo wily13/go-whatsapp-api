@@ -3,8 +3,8 @@ package validations
 import (
 	validation "github.com/go-ozzo/ozzo-validation/v4"
 	"github.com/go-ozzo/ozzo-validation/v4/is"
-	"github.com/wily13/go-whatsapp-api/src/structs"
-	"github.com/wily13/go-whatsapp-api/src/utils"
+	"github.com/wily13/go-whatsapp-api/structs"
+	"github.com/wily13/go-whatsapp-api/utils"
 )
 
 func ValidateUserInfo(request structs.UserInfoRequest) {
