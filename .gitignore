@@ -6,4 +6,4 @@ history-*.json
 main
 main.exe
 *.jpe
-src/pkged.go
+app/pkged.go
