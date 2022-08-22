@@ -160,3 +160,36 @@ func (controller SendController) SendContact(c *fiber.Ctx) error {
 		Results: response,
 	})
 }
+
+
+// test api send image from direktori
+func (controller *SendController) SendImageDir(c *fiber.Ctx) error {
+	var request structs.SendImageRequest
+	request.Compress = true
+
+	err := c.BodyParser(&request)
+	utils.PanicIfNeeded(err)
+
+	file, err := c.FormFile("image")
+	utils.PanicIfNeeded(err)
+
+	request.Image = file
+
+	//add validation send image
+	validations.ValidateSendImage(request)
+
+	if request.Type == structs.TypeGroup {
+		request.Phone = request.Phone + "@g.us"
+	} else {
+		request.Phone = request.Phone + "@s.whatsapp.net"
+	}
+
+	response, err := controller.Service.SendImage(c, request)
+	utils.PanicIfNeeded(err)
+
+	return c.JSON(utils.ResponseData{
+		Code:    200,
+		Message: response.Status,
+		Results: response,
+	})
+}

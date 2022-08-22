@@ -11,7 +11,7 @@ var (
 	PathQrCode    string = "statics/qrcode"
 	PathSendItems string = "statics/senditems"
 
-	DBName string = "hydrogenWaCli.db"
+	DBName string = "reminrsifcWaCli.db"
 
 	WhatsappLogLevel            string = "ERROR"
 	WhatsappAutoReplyMessage    string
