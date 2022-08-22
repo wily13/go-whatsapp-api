@@ -816,8 +816,8 @@
                             let payload = new FormData();
                             payload.append("caption", this.file_caption)
                             payload.append("phone", this.file_phone)
-                            // payload.append("file", $("#file_file")[0].files[0])
-                            payload.append("file", "http://192.168.10.8:18082/akunting-prod/api/rekapgaji/preview/AKN2022060211")
+                            payload.append("file", $("#file_file")[0].files[0])
+                            // payload.append("file", "http://192.168.10.8:18082/akunting-prod/api/rekapgaji/preview/AKN2022060211")
                             payload.append("type", this.file_type)
 
                             console.log($("#file_file")[0].files[0])
